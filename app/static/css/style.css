@@ -1,0 +1,115 @@
+/* app/static/css/style.css */
+
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li, header, nav, main, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+    gap: 20px; /* Gap between grid items */
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.error-message {
+    color: red;
+}
